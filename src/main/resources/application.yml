@@ -1,0 +1,26 @@
+spring:
+  main:
+    banner-mode: "off"
+  application:
+    name: spring-boot-security-oauth2-server-spring-security-resourceserver
+server:
+  port: 8080
+
+
+logging.level.de: debug
+logging.level.org.springframework.web: debug
+logging.level.org.springframework.security: trace
+logging.level.org.springframework.web-security: trace
+logging.level.org.keycloak: trace
+
+
+security:
+  token-check-uri: http://localhost:8280/auth/realms/demo-realm/protocol/openid-connect/token/introspect
+  resource-id: demo-client
+  client-id: demo-client
+  client-secret: fe8b3438-e75b-4386-ad21-e0ee44cbf386
+
+
+
+
+
